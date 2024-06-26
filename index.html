@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        border: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+    }
+
+    .navbar {
+        height: 70px;
+        background-color: #074173;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #FFFAB7;
+    }
+
+    body {
+        background-color: rgb(236, 235, 193);
+       
+    }
+
+    .box1 {
+        color: #F7C566;
+        width: 35%;
+    }
+
+    .box1 h1 {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .box1 i {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .box2 {
+        width: 45%;
+    }
+
+    .box2 li {
+        display: inline;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .box2 li:hover {
+        text-decoration: underline;
+    }
+
+    .box3 button {
+        height: 35px;
+        width: 100px;
+        border-radius: 60px;
+        margin-left: 100px;
+        font-size: 18px;
+    }
+
+    .box3 button:hover {
+        background-color: #F7C566;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 0;
+
+    }
+
+    .container {
+        height: 700px;
+        background-image: url("education.jpg");
+        background-size: cover;
+    }
+
+    .heading {
+        height: 500px;
+        padding-top: 250px;
+        padding-left: 50px;
+        font-family: serif;
+    }
+
+    .heading h1 {
+        font-size: 60px;
+        font-family: cursive;
+        color: rgb(89, 28, 96);
+    }
+
+    .heading p {
+        color: #074173;
+        font-family: cursive;
+    }
+
+    .heading button {
+        height: 35px;
+        width: 160px;
+        border-radius: 20px;
+        background-color: #F0EBE3;
+        font-size: large;
+        border: 1px dashed black;
+    }
+
+    .heading button:hover {
+        background-color: #074173;
+        color: white;
+        height: 40px;
+        width: 170px;
+    }
+
+    body {
+        background-color: #F0EBE3;
+        /* height: 1000px; */
+    }
+
+    .leftsection {
+        font-size: 2.5rem;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+
+    .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 40px;
+        width: 98%;
+        background-color: #4eeedc;
+        margin-left: 15px;
+        font-family: cursive;
+
+    }
+
+    .courses {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .course {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 200px;
+        background-color: #b5e3dd;
+        border: 2px solid #074173;
+        border-radius: 10px;
+        font-size: 23px;
+    }
+
+    .course:hover {
+        background-color: #074173;
+        border: 2px solid black;
+        color: white;
+    }
+
+    .courses i {
+        font-size: 30px;
+    }
+
+    .second {
+        width: 1000px;
+        display: flex;
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+
+    .second img {
+        mix-blend-mode: multiply;
+    }
+
+    .msg {
+        margin-top: 30px;
+        margin-left: 150px;
+        font-size: 20px;
+        font-family: ;
+    }
+
+    .msg p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .third {
+        /* background-color: #CDE8E5; */
+        height: 100px;
+        margin: 100px 20px 0 20px;
+    }
+
+    .msg1 {
+        padding: 10px 350px 0 350px;
+    }
+
+    .sub-msg {
+        padding: 5px 250px 10px 250px;
+    }
+
+    .fourth {
+        padding: 100px 0 0 50px;
+    }
+
+    .fourth h1 {
+        margin-top: 10px;
+    }
+
+    .fifth {
+        display: flex;
+        background-color: #074173;
+        height: 200px;
+        margin: 70px 10px 40px 200px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        color: #CDE8E5;
+    }
+
+    .msg2 {
+        padding: 40px 0 15px 50px;
+    }
+
+    .right {
+        padding: 100px 100px 100px 100px;
+    }
+
+    .right button {
+        height: 40px;
+        width: 180px;
+        border: 1px dashed goldenrod;
+        border-radius: 30px;
+        font-size: large;
+    }
+
+    .right button:hover {
+        height: 50px;
+        width: 190px;
+        border: 2px solid black;
+        background-color: #CDE8E5;
+    }
+
+    .foot-panel1 {
+        background-color: #9AC8CD;
+        height: 300px;
+        color: #074173;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .foot-panel1 p {
+        font-size: 30px;
+        font-weight: 700;
+        color: #1C1678;
+    }
+
+    .foot-panel1 ul {
+        margin-top: 40px;
+    }
+
+    .foot-panel1 UL {
+        list-style: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ul a {
+        display: block;
+        font-size: 17px;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .foot-panel1 .sub-msg2 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .icon {
+        margin-top: 40px;
+        color: #1C1678;
+        font-size: 20px;
+    }
+
+    .icon i {
+        margin-right: 30px;
+    }
+
+    .foot-panel2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        height: 30px;
+        background-color: #074173;
+        color: #dddddd;
+
+    }
+
+    #element {
+        color: purple;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="box1">
+                <h1>Grobman Consulting</h1>
+            </div>
+            <div class="box2">
+                <ul>
+                    <li>HOME</li>
+                    <li>SERVICES</li>
+                    <li>WHY US?</li>
+                    <li>BLOG</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
+    <section class="firstsection">
+        <span class="container">
+
+            <div class="heading">
+                <h1>We will help you
+                    <br>leverge your
+                    <br>authentic self
+                </h1>
+                <br>
+                <span id="element"></span>
+
+                <p>
+                    Build skills and earn valuable degrees with courses
+                    <br>from renowned universities
+                </p>
+                </p>
+                <br><br>
+                <button>START FOR free</button>
+            </div>
+        </span>
+        <div class="leftsection">
+            <img class="i8mage-top" src="28-man-png-image.png" width="300px">
+        </div>
+    </section>
+
+    <div class="main-part">
+        <br>
+        <div class="first">
+            OUR Courses
+        </div>
+
+        <div class="courses">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="course">
+                <h2>Ethical <br>Hacking</h2>
+            </div>
+            <div class="course">
+                <h2>Cyber <br>Security</h2>
+            </div>
+            <div class="course">
+                <h2>Data<br>Analytics</h2>
+            </div>
+            <div class="course">
+                <h2>Machine<br>Learning</h2>
+            </div>
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <div class="second">
+
+            <div><img src="book.png" height="340px" width="350px"></div>
+            <div class="msg">
+                <h1>LEARN AT THE COMFORT<br>OF YOUR OWN HOME</h1>
+                <br>
+                <p>Here at ourCourses ,we bring you world class Courses and Degrees to</p>
+                <p>help you learn new skills.find inspiration ,share knowledge and present</p>
+                <p>your ideas to the world - all you need to build a thriving career</p>
+            </div>
+
+        </div>
+        <div class="third">
+            <div class="msg1">
+                <h2>Have a Break. Have a Education. Think Education</h2>
+            </div>
+            </br>
+            <div class="sub-msg">
+                <p>we belive everyone has the capacity to be creative .skill is a place
+                    where people develop their own potential </p>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <h1>Trusted by 15,000+ Aspiring Students</h1>
+            <h1>Who Dream To Achieve Their Goals. </h1>
+        </div>
+
+        <div class="fifth">
+            <div class="msg2">
+                <h1>Achieve Your Goals With Our Online Courses </h1><br>
+                <p>Get cta & start learning access to online courses ,
+                    learn any skill and gain knowledge <br>from leading universities achieve
+                    highly recognise certificates and degrees.<br>
+                    get in touch with leading companies - kick start your career.</p>
+            </div>
+            <div class="right"><button>start learning</button> </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            <ul>
+                <p>Useful Links</p>
+                <a>My Accounts</a>
+                <a>Services</a>
+                <a>Team</a>
+                <a>Blog</a>
+            </ul>
+
+            <uL>
+                <p>Contact</p>
+                <a>7/63 Alpha Tower</a>
+                <a>0032 8476 4832</a>
+                <a>www.grobmanconsulting.com</a>
+
+            </uL>
+
+            <ul>
+                <p><i class="fa-solid fa-book-open"></i> Courses</p>
+                <p class="sub-msg2">
+                    A leading Globel platform to help student develop theirskills <br>under
+                    the best instructors and build up <br>careers from Anywhere in the world.
+                </p>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+            </ul>
+        </div>
+
+        <div class="foot-panel2">
+            ThankYou :
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Detailed And Delayed', 'Lifetime Knowladge', 'Increase your skills in no time'],
+            typeSpeed: 50,
+        });
+    </script>.
+
+
+</body>
+
+</html>
